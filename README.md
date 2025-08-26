@@ -4,18 +4,20 @@ Este repositorio contiene **10 ejercicios introductorios en Python**, diseñados
 
 ## 🚀 Instrucciones
 
-1. Haz un fork de este repositorio.
+1. Clona este repositorio.
 2. Crea un branch con tu nombre. Ejemplo:
    ```
-   git checkout -b Omar-ejercicios
+   git checkout -b Omar-Juarez-ejercicios
    ```
 3. Abre la carpeta `ejercicios/` y completa el código de cada archivo `ejercicioX.py`.
 4. Cada ejercicio tiene su propio archivo de pruebas en la carpeta `tests/`.
-5. Para ejecutar todos los tests:
+5. Para ejecutar el test del ejercicio 1 escibe:
    ```
-   python -m unittest discover tests
+   python -m unittest tests/test_ejercicio1.py
+   o
+   python3 -m unittest tests/test_ejercicio1.py
    ```
-6. Asegúrate de que **todos los tests pasen** antes de subir tus cambios.
+6. Asegúrate de que **todos los tests pasen** antes de "empujar" (push) tus cambios al repo.
 
 ## 📂 Estructura
 
