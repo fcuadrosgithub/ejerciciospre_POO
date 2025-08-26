@@ -9,5 +9,16 @@ y regrese un diccionario con:
 """
 
 def separar_pares_impares(lista):
-    # TODO: implementar
+    resultados = {
+        "pares": [],
+        "impares": []
+    }
+    
+    for numero in lista:
+        if numero % 2 == 0:
+            resultados["pares"].append(numero)
+        else:
+            resultados["impares"].append(numero)
+    
+    return resultados
     pass
