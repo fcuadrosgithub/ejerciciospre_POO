@@ -6,5 +6,6 @@ y regrese el número de palabras (separadas por espacios).
 """
 
 def contar_palabras(frase):
-    # TODO: implementar
+    words=frase.split()
+    return len(words)
     pass

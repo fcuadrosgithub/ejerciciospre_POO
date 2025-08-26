@@ -11,5 +11,13 @@ Debe regresar un diccionario con:
 """
 
 def analizar_calificaciones(calificaciones):
-    # TODO: implementar
+    calif=list(calificaciones.values())
+    n_max = max(calificaciones, key=calificaciones.get)
+    n_min = min(calificaciones, key=calificaciones.get)
+    
+    return {
+        "promedio": sum(calif)/len(calif),
+        "max": (n_max, calificaciones[n_max]),
+        "min": (n_min, calificaciones[n_min])
+    }
     pass

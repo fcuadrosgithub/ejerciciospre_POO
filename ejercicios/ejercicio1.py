@@ -11,5 +11,10 @@ y regrese un diccionario con:
 """
 
 def operaciones_basicas(a, b):
-    # TODO: implementar
+    return {
+        "suma": a + b,
+        "resta": a - b,
+        "multiplicacion": a * b,
+        "division": a / b if b != 0 else None
+    }
     pass

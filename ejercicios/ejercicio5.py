@@ -6,5 +6,13 @@ y regrese un diccionario con la frecuencia de cada caracter.
 """
 
 def frecuencia_caracteres(texto):
-    # TODO: implementar
+    f={}
+
+    for letter in texto:
+        if letter in f:
+            f[letter]+=1
+        else:
+            f[letter]=1
+    
+    return f
     pass
