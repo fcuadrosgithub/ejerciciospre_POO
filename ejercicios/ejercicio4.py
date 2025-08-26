@@ -11,5 +11,22 @@ Debe regresar un diccionario con:
 """
 
 def analizar_calificaciones(calificaciones):
+    if not calificaciones:
+        return {"promedio": 0, "max": None, "min": None}
+    
+    total_calificaciones = sum(calificaciones.values())
+    promedio = total_calificaciones / len(calificaciones)
+    
+    nombre_max = max(calificaciones, key=calificaciones.get)
+    nombre_min = min(calificaciones, key=calificaciones.get)
+    
+    resultado = {
+        "promedio": promedio,
+        "max": (nombre_max, calificaciones[nombre_max]),
+        "min": (nombre_min, calificaciones[nombre_min])
+    }
+    
+    return resultado
+
     # TODO: implementar
     pass
