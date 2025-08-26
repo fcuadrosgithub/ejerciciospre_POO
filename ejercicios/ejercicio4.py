@@ -11,5 +11,26 @@ Debe regresar un diccionario con:
 """
 
 def analizar_calificaciones(calificaciones):
-    # TODO: implementar
+    calificaciones_totales = 0 
+    max_nombre = None
+    max_calificacion = float("-inf")
+    min_nombre = None
+    min_calificacion = float("inf")
+    for nombre, calificacion in calificaciones.items():
+        calificaciones_totales += calificacion
+        
+        if calificacion > max_calificacion:
+            max_calificacion = calificacion
+            max_nombre = nombre
+        
+        if calificacion < min_calificacion:
+            min_calificacion = calificacion
+            min_nombre = nombre
+
+    promedio = calificaciones_totales / len(calificaciones) if calificaciones else 0
+    return {
+        "promedio": promedio,
+        "max": (max_nombre, max_calificacion) if max_nombre else (None, None),
+        "min": (min_nombre, min_calificacion) if min_nombre else (None, None)
+    }
     pass
