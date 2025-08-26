@@ -1,11 +1,11 @@
 """
 Ejercicio 6: Lista de compras
 
-Crea una clase simulada con funciones (no POO aún):
+Crea las siguientes funciones:
 
 - agregar(lista, producto)
 - eliminar(lista, producto)
-- mostrar(lista)
+- mostrar(lista), regresa la lista completa 
 
 Cada función recibe la lista de compras y hace la operación correspondiente.
 """
