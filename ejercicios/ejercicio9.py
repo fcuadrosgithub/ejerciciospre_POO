@@ -8,13 +8,13 @@ Crea tres funciones:
 """
 
 def celsius_a_fahrenheit(c):
-    # TODO: implementar
+    return (c * 9/5) + 32
     pass
 
 def fahrenheit_a_celsius(f):
-    # TODO: implementar
+    return (f - 32) * 5/9
     pass
 
 def celsius_a_kelvin(c):
-    # TODO: implementar
+    return c + 273.15
     pass

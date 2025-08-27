@@ -10,14 +10,18 @@ Crea las siguientes funciones:
 Cada función recibe la lista de compras y hace la operación correspondiente.
 """
 
+compras=[]
 def agregar(lista, producto):
+    lista.append(producto)
     # TODO: implementar
     pass
 
 def eliminar(lista, producto):
-    # TODO: implementar
+    if producto in lista:
+        lista.remove(producto)
+    return lista
     pass
 
 def mostrar(lista):
-    # TODO: implementar
+    return lista
     pass
