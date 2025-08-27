@@ -10,18 +10,31 @@ Crea las siguientes funciones:
 Cada función recibe la lista de compras y hace la operación correspondiente.
 """
 
-compras=[]
+# Función para agregar un producto a la lista
 def agregar(lista, producto):
     lista.append(producto)
-    # TODO: implementar
-    pass
+    print(f"{producto} agregado a la lista.")
 
+# Función para eliminar un producto de la lista
 def eliminar(lista, producto):
     if producto in lista:
         lista.remove(producto)
-    return lista
-    pass
+        print(f"{producto} eliminado de la lista.")
+    else:
+        print(f"{producto} no se encuentra en la lista.")
 
+# Función para mostrar la lista completa
 def mostrar(lista):
+    print("Lista de compras:")
+    for producto in lista:
+        print("-", producto)
     return lista
-    pass
+
+
+# Ejemplo de uso
+compras = []
+
+agregar(compras, "manzanas")
+agregar(compras, "pan")
+eliminar(compras, "pan")
+mostrar(compras)

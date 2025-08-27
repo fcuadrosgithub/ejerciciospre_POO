@@ -10,6 +10,9 @@ Debe regresar:
 - "Correcto" si el intento == numero_secreto
 """
 
+import random
+
+# Función que compara el intento con el número secreto
 def adivinar(numero_secreto, intento):
     if intento > numero_secreto:
         return "Demasiado alto"
@@ -17,4 +20,16 @@ def adivinar(numero_secreto, intento):
         return "Demasiado bajo"
     else:
         return "Correcto"
-    pass
+
+# Ejemplo de juego
+numero_secreto = random.randint(1, 100)  # número secreto entre 1 y 100
+intento = None
+
+print("¡Adivina el número entre 1 y 100!")
+
+while intento != numero_secreto:
+    intento = int(input("Ingresa tu intento: "))
+    resultado = adivinar(numero_secreto, intento)
+    print(resultado)
+
+print("¡Felicidades! Adivinaste el número.")
