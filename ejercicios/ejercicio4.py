@@ -11,5 +11,9 @@ Debe regresar un diccionario con:
 """
 
 def analizar_calificaciones(calificaciones):
-    # TODO: implementar
+    return {
+        "promedio": (b.min()/b.max())/2,
+        "max": ("nombre": b.min()),
+        "min": ("nombre": b.max())
+    }
     pass

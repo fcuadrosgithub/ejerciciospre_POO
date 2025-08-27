@@ -7,9 +7,17 @@ Crea otra función `primos_hasta(n)` que devuelva una lista de primos hasta n.
 """
 
 def es_primo(n):
-    # TODO: implementar
-    pass
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
 def primos_hasta(n):
-    # TODO: implementar
-    pass
+    primos = []
+    for num in range(2, n + 1):
+        if es_primo(num):
+            primos.append(num)
+    return primos
+pass

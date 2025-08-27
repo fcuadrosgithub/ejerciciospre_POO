@@ -8,5 +8,11 @@ y regrese un diccionario con:
 """
 
 def suma_filas_columnas(matriz):
-    # TODO: implementar
+    suma_filas = [sum(fila) for fila in matriz]
+    sum_columnas = [sum(matriz[i][j] for i in range(3)) for j in range(3)]
+
+    return {
+        "filas": suma_filas,
+        "columnas": sum_columnas
+    }
     pass
