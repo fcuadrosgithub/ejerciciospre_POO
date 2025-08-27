@@ -11,5 +11,19 @@ Debe regresar un diccionario con:
 """
 
 def analizar_calificaciones(calificaciones):
-    # TODO: implementar
+
     pass
+    promedio = sum(calificaciones.values()) / len(calificaciones)
+    max_nombre, max_calificacion = max(calificaciones.items(), key=lambda x: x[1])
+    min_nombre, min_calificacion = min(calificaciones.items(), key=lambda x: x[1])
+    
+    return {
+        "promedio": promedio,
+        "max": (max_nombre, max_calificacion),
+        "min": (min_nombre, min_calificacion)
+    }
+
+# Ejemplo de uso
+calificaciones = {"Alice": 85, "Bob": 90, "Charlie": 78}
+resultado = analizar_calificaciones(calificaciones)
+print(resultado)
