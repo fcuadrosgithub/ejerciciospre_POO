@@ -6,9 +6,6 @@ y regrese el número de palabras (separadas por espacios).
 """
 
 def contar_palabras(frase):
-    pass
-    return len(frase.split())
 
-#Test
-resultado = contar_palabras("Hola, me llamo Monse")
-print(resultado) 
+    palabras = frase.split()
+    return len(palabras)

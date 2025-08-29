@@ -11,15 +11,9 @@ y regrese un diccionario con:
 """
 
 def operaciones_basicas(a, b):
-    # TODO: implementar
-    pass
-    return {
         "suma": a + b,
         "resta": a - b,
         "multiplicacion": a * b,
         "division": a / b if b != 0 else None
     }
-    
-#testt
-resultado = operaciones_basicas(10, 2)
-print(resultado)
+

@@ -13,10 +13,8 @@ def es_primo(n):
             return False
     return True
 
+    pass
+
 def primos_hasta(n):
-    primos = []
-    for num in range(2, n + 1):
-        if es_primo(num):
-            primos.append(num)
-    return primos
-pass
+        return [i for i in range(2, n + 1) if es_primo(i)]
+     

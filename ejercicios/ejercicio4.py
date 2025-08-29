@@ -12,18 +12,19 @@ Debe regresar un diccionario con:
 
 def analizar_calificaciones(calificaciones):
 
-    pass
-    promedio = sum(calificaciones.values()) / len(calificaciones)
-    max_nombre, max_calificacion = max(calificaciones.items(), key=lambda x: x[1])
-    min_nombre, min_calificacion = min(calificaciones.items(), key=lambda x: x[1])
+    if not calificaciones:
+        return {"promedio": 0, "max": None, "min": None}
     
-    return {
+    total_calificaciones = sum(calificaciones.values())
+    promedio = total_calificaciones / len(calificaciones)
+    
+    nombre_max = max(calificaciones, key=calificaciones.get)
+    nombre_min = min(calificaciones, key=calificaciones.get)
+    
+    resultado = {
         "promedio": promedio,
-        "max": (max_nombre, max_calificacion),
-        "min": (min_nombre, min_calificacion)
+        "max": (nombre_max, calificaciones[nombre_max]),
+        "min": (nombre_min, calificaciones[nombre_min])
     }
-
-# Ejemplo de uso
-calificaciones = {"Alice": 85, "Bob": 90, "Charlie": 78}
-resultado = analizar_calificaciones(calificaciones)
-print(resultado)
+    
+    return resultado

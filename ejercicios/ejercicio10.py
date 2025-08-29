@@ -17,4 +17,4 @@ def adivinar(numero_secreto, intento):
         return "Demasiado bajo"
     else:
         return "Correcto"
-    pass
+

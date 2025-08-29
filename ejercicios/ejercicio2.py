@@ -9,13 +9,17 @@ y regrese un diccionario con:
 """
 
 def separar_pares_impares(lista):
-    # TODO: implementar
-    pass
+    pares = []
+    impares = []
+    for numero in lista:
+        if numero %2 == 0:
+            pares.append(numero)
+        else:
+            impares.append(numero)
+    pares.sort()
+    impares.sort()
     return {
-        "pares": [x for x in lista if x % 2 == 0],
-        "impares": [x for x in lista if x % 2 != 0]
+        "pares": pares,
+        "impares": impares
     }
 
-# Ejemplo de uso
-resultado = separar_pares_impares([1, 2, 3, 4, 5, 6])
-print(resultado)
