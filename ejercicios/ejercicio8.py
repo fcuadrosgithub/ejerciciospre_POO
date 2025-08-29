@@ -8,5 +8,17 @@ y regrese un diccionario con:
 """
 
 def suma_filas_columnas(matriz):
-    # TODO: implementar
+    resultado = {
+        "filas": [],
+        "columnas": [0, 0, 0]  # Inicializamos la suma de columnas
+    }
+    
+    for fila in matriz:
+        suma_fila = sum(fila)
+        resultado["filas"].append(suma_fila)
+        
+        for i in range(3):  # Asumiendo que la matriz es 3x3
+            resultado["columnas"][i] += fila[i]
+    
+    return resultado
     pass

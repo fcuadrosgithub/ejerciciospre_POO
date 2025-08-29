@@ -11,5 +11,25 @@ Debe regresar un diccionario con:
 """
 
 def analizar_calificaciones(calificaciones):
-    # TODO: implementar
+    if not calificaciones:  
+        return {"promedio": None, "max": (None, None), "min": (None, None)}
+
+    
+    nombres, notas = zip(*calificaciones)
+
+    promedio = sum(notas) / len(notas)
+    calificacion_mayor = max(notas)
+    calificacion_menor = min(notas)
+    
+   
+    nombre_mayor = nombres[notas.index(calificacion_mayor)]
+    nombre_menor = nombres[notas.index(calificacion_menor)]
+
+    resultados = {
+        "promedio": promedio,
+        "max": (nombre_mayor, calificacion_mayor),
+        "min": (nombre_menor, calificacion_menor)
+    }
+
+    return resultados
     pass
