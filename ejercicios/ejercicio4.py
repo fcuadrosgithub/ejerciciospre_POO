@@ -11,6 +11,7 @@ Debe regresar un diccionario con:
 """
 
 def analizar_calificaciones(calificaciones):
+
     if not calificaciones:
         return {"promedio": 0, "max": None, "min": None}
     
@@ -27,4 +28,3 @@ def analizar_calificaciones(calificaciones):
     }
     
     return resultado
-    pass

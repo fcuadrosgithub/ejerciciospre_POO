@@ -22,3 +22,4 @@ def separar_pares_impares(lista):
         "pares": pares,
         "impares": impares
     }
+

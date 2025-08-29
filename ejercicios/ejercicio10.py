@@ -11,7 +11,6 @@ Debe regresar:
 """
 
 def adivinar(numero_secreto, intento):
-     
     if intento > numero_secreto:
         return "Demasiado alto"
     elif intento < numero_secreto:
@@ -19,4 +18,3 @@ def adivinar(numero_secreto, intento):
     else:
         return "Correcto"
 
-pass

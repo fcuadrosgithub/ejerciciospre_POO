@@ -8,6 +8,7 @@ y regrese un diccionario con:
 """
 
 def suma_filas_columnas(matriz):
+
     resultado = {
         "filas": [],
         "columnas": [0, 0, 0]  # Inicializamos la suma de columnas
@@ -24,3 +25,4 @@ def suma_filas_columnas(matriz):
     
     return resultado
     pass
+
