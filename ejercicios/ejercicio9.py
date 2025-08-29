@@ -8,13 +8,18 @@ Crea tres funciones:
 """
 
 def celsius_a_fahrenheit(c):
-    # TODO: implementar
+    """Convierte Celsius a Fahrenheit."""
+    return (c * 9/5) + 32
+# TODO: implementar
     pass
 
 def fahrenheit_a_celsius(f):
-    # TODO: implementar
+    """Convierte Fahrenheit a Celsius."""
+    return (f - 32) * 5/9
+# TODO: implementar
     pass
 
 def celsius_a_kelvin(c):
-    # TODO: implementar
-    pass
+    """Convierte Celsius a Kelvin."""
+    return c + 273.15
+

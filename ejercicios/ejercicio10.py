@@ -11,5 +11,10 @@ Debe regresar:
 """
 
 def adivinar(numero_secreto, intento):
-    # TODO: implementar
-    pass
+    """Evalúa el intento del jugador en relación con el número secreto."""
+    if intento > numero_secreto:
+        return "Demasiado alto"
+    elif intento < numero_secreto:
+        return "Demasiado bajo"
+    else:
+        return "Correcto"
