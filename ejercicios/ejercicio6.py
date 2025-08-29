@@ -11,13 +11,16 @@ Cada función recibe la lista de compras y hace la operación correspondiente.
 """
 
 def agregar(lista, producto):
-    # TODO: implementar
-    pass
+    lista.append(producto)
+pass
 
 def eliminar(lista, producto):
-    # TODO: implementar
-    pass
-
+    if producto in lista:
+        lista.remove(producto)
+    else:
+        print(f"El producto '{producto}' no está en la lista.")
+pass
 def mostrar(lista):
-    # TODO: implementar
+    return lista
+
     pass
