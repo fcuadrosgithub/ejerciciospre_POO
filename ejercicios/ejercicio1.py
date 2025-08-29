@@ -9,7 +9,6 @@ y regrese un diccionario con:
 - "multiplicacion": a * b
 - "division": a / b  (si b != 0, de lo contrario regresa None)
 """
-
 def operaciones_basicas(a, b):
     return {
         "suma": a + b,
